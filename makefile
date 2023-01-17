@@ -6,4 +6,4 @@ build:
 
 generate-postgres: build
 	mkdir -p out
-	docker run --rm -v $(PWD)/docs/db:/app $(IMAGE_NAME) dbml2sql schema.dbml --postgres > out/schema.sql
+	docker run -it --rm -v $(PWD)/docs/db:/app $(IMAGE_NAME) dbml2sql schema.dbml --postgres > out/schema.sql
