@@ -4,4 +4,4 @@ RUN npm install -g @dbml/cli
 
 WORKDIR /app
 
-CMD ["dbml-cli"]
+CMD ["sh", "-c", "while true; do sleep 30; done"]
